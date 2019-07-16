@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Base */
+
+html    {   font: 100%/1.5 Arial, sans-serif;       }
+
+/**
+
+This sets us up with our base size at 100% of the browser's default (usually 16px), 
+gives us a unitless 1.5 for the line-height, then sets up our font stack. 
+You can read more about this "100%" default by checking out 
+Taking Ems Even Further on Tuts+.
+
+*/
+
+/* Heading */
+
+h1      { font-size: 2em;       /* 2*16 = 32 */         }
+h2      { font-size: 1.5em;     /* 1.5*16 = 24 */       }
+h3      { font-size: 1.17em;    /* 1.17*16 = 18.72 */   }
+h4      { font-size: 1em;       /* 1*16 = 16 */         }
+h5      { font-size: 0.83em;    /* 0.83*16 = 13.28 */   }
+h6      { font-size: 0.75em;    /* 0.75*16 = 12 */      }
+
+/* These values are in ems, but you can see the equivalent pixel values noted in the comments. */
+
+/* Paragraphs */
+
+p { 
+  line-height: 1.5;
+  margin: 0 0 1em; 
+}
+
+/* Paragraphs Word Breaks */
+
+p       {   word-break: break-all;
+ 
+            /* Non standard for webkit */
+            word-break: break-word;
+ 
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;          }
+
+
+/* Slam on the Anchors */
+
+a,
+a:visited   {   text-decoration: underline; }
+a:hover     {   text-decoration: none; }
+
+/* Assumed Bits and Bobs */
+
+strong  {   font-weight: bold;  }
+em      {   font-style: italic; }
+
+/* Code Snippets */
+
+code,
+pre     {   font-family: monospace, serif;
+            font-size: 1em; }
+
+

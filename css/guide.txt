@@ -1,0 +1,95 @@
+Table of content
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+Area section comment
+
+/*------------------------------------*\
+  #A-SECTION
+\*------------------------------------*/
+
+
+file comment
+
+/**
+ * @file
+ * Short description describing the file.
+ *
+ * The first sentence of the long description starts here and continues on this
+ * line for a while finally concluding here at the end of this paragraph.
+ */
+
+Multi-line comments
+
+/**
+ * Short description using Doxygen-style comment format.
+ *
+ * The first sentence of the long description starts here and continues on this
+ * line for a while finally concluding here at the end of this paragraph.
+ *
+ * The long description is ideal for more detailed explanations and
+ * documentation. It can include example HTML, URLs, or any other information
+ * that is deemed necessary or useful.
+ */
+
+Multiple comment 80 character
+
+ /**
+ * I am a long-form comment. I describe, in detail, the CSS that follows. I am
+ * such a long comment that I easily break the 80 character limit, so I am
+ * broken across several lines.
+ */
+
+Single-line comment
+
+/* Override the default margins. */
+
+Exception and slight deviations
+
+.selector-1 { width: 10%; }
+.selector-2 { width: 20%; }
+.selector-3 { width: 30%; }
+
+.selector {
+  background-image:
+    linear-gradient(#fff, #ccc),
+    linear-gradient(#f3c, #4ec);
+  box-shadow:
+    1px 1px 1px #000,
+    2px 2px 1px 1px #ccc inset;
+}
+
+@media screen and (min-width: 28.125rem) { /* 450px */
+  #page {
+    margin-left: 20px;
+    margin-left: 1.25rem;
+    margin-right: 20px;
+    margin-right: 1.25rem;
+  }
+}
