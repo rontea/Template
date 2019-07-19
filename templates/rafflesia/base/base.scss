@@ -1,5 +1,4 @@
-@charset "utf-8";
-/* CSS Document */
+
 
 
 * {
@@ -26,7 +25,7 @@ html, body {
 .wrap-left {
 	width: 0;
 	float: left;
-	height: auto;	
+	height: auto;
 }
 
 .wrap-left header .header-logo {
@@ -51,7 +50,7 @@ header , footer {
 .header-nav-left , .header-logo , .header-search , .header-nav {
 	float: left;
 	height: 100%;
-} 
+}
 
 .wrap-right header {
 	height: auto;
@@ -63,7 +62,7 @@ header , footer {
 
 .wrap-right header .header-search {
 	width: 50%;
-	
+
 }
 
 .wrap-right header .header-nav {
@@ -72,5 +71,5 @@ header , footer {
 
 
 footer {
-	
+
 }
