@@ -30,10 +30,7 @@ html, body {
 }
 
 .wrap-left header .header-logo {
-	
 	width: 100%;
-	
-	
 }
 
 .wrap-right {
@@ -51,29 +48,26 @@ header , footer {
 	width: 100%;
 }
 
-.header-logo , .header-search , .header-nav {
+.header-nav-left , .header-logo , .header-search , .header-nav {
 	float: left;
 	height: 100%;
 } 
 
-header {
-	height: 100px;
+.wrap-right header {
+	height: auto;
+}
+.wrap-right header .header-nav-left {
+	width: 5%;
 }
 
-header .header-logo {
-	
-	width: 100%;
-	
-	
-}
 
-header .header-search {
-	width: 40%;
+.wrap-right header .header-search {
+	width: 50%;
 	
 }
 
-header .header-nav {
-	width: 40%;
+.wrap-right header .header-nav {
+	width: 45%;
 }
 
 
