@@ -1,0 +1,45 @@
+/* sidenav */
+
+$height: 100%;
+$width: 0;
+$position: fixed;
+$index: 1;
+$top: 0;
+$left: 0;
+$background_color: #111;
+$overflow_x: hidden;
+$padding: 60px 0 0 0;
+$transition: 0.5s;
+
+/* Side nav Function */
+@mixin side-nav($height, $width, $position, $index,
+$top, $left, $background_color, $overflow_x, $padding ,$transition){
+
+  height: $height; /* 100% Full-height */
+  width: $width; /* 0 width - change this with JavaScript */
+  position: $position; /* Stay in place */
+  z-index: $index; /* Stay on top */
+  top: $top; /* Stay at the top */
+  left: $left; /* Stay at the left */
+  background-color: $background_color; /* Black*/
+  overflow-x: $overflow_x; /* Disable horizontal scroll */
+  padding-top: $padding;  /* Place content padding on top from the top */
+  transition: $transition; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.side-nav {
+  @include side-nav($height, $width, $position, $index,
+  $top, $left, $background_color, $overflow_x, $padding ,$transition);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

@@ -1,3 +1,4 @@
+/* CSS reset */
 body {
   overflow: hidden; }
 
@@ -48,10 +49,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* Colors */
+/* widths */
+/*font*/
 /* Base CSS */
-* {
-  box-sizing: border-box; }
-
 html, body {
   margin: 0 auto;
   height: 100%;
@@ -59,19 +60,12 @@ html, body {
   width: 100%; }
 
 .wrap {
-  width: 100%;
-  height: 100%;
-  float: left; }
-  .wrap .wrap-left {
-    width: 0;
-    float: left;
-    height: auto; }
-    .wrap .wrap-left header .header-logo {
-      width: 100%; }
+  width: auto;
+  height: auto; }
   .wrap .wrap-right {
-    width: 100%;
-    float: left;
-    height: auto; }
+    width: 100%; }
+    .wrap .wrap-right header {
+      height: 100px; }
 
 .clearfix {
   overflow: auto; }
@@ -80,18 +74,24 @@ header, footer {
   float: left;
   width: 100%; }
 
+/* wrap-left */
+.wrap-left header .header-logo {
+  width: 100%;
+  height: 100px; }
+
 /* wrap-right */
-.wrap-right header {
-  height: auto; }
-  .wrap-right header .header-search {
-    width: 50%; }
-  .wrap-right header .header-nav-left {
-    width: 5%; }
-  .wrap-right header .header-nav {
-    width: 45%; }
-  .wrap-right header .header-nav-left, .wrap-right header .header-logo, .wrap-right header .header-search, .wrap-right header .header-nav {
-    float: left;
-    height: 100%; }
+.wrap-right header .header-nav-left {
+  width: 5%; }
+.wrap-right header .header-search {
+  width: 50%; }
+.wrap-right header .header-nav {
+  width: 45%; }
+.wrap-right header .header-nav-left, .wrap-right header .header-search, .wrap-right header .header-nav {
+  float: left; }
+
+.wrap-content .page-content {
+  width: 100%;
+  height: 100%; }
 
 footer {
   float: left; }

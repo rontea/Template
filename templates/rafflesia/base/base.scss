@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-
-
 $float_left: left;
 
 html, body {
@@ -13,23 +7,19 @@ html, body {
 	width: 100%;
 }
 
+$header_height: 100px;
+
 .wrap {
-	width:100%;
-	height: 100%;
-	float: left;
-    .wrap-left {
-      width: 0;
-      float: left;
-      height: auto;
-        header .header-logo {
-          width: 100%;
-        }
-    }
+	width:auto;
+	height:auto;
 
     .wrap-right {
       width: 100%;
-      float: left;
-      height: auto;
+			
+
+				header {
+					height: $header_height;
+				}
     }
 }
 
@@ -39,35 +29,46 @@ html, body {
 }
 
 header , footer {
-	float: left;
+	float: $float_left;
 	width: 100%;
+}
+/* wrap-left */
+.wrap-left{
+	header .header-logo {
+		width: 100%;
+		height: $header_height;
+	}
 }
 /* wrap-right */
 
 $wrap_right_height: 100%;
 
 .wrap-right header {
-
-  height: auto;
-  
+	.header-nav-left {
+  	width: 5%;
+  }
 
   .header-search {
  	  width: 50%;
-  }
-
-  .header-nav-left {
-  	width: 5%;
   }
 
   .header-nav {
   	width: 45%;
   }
 
-  .header-nav-left , .header-logo , .header-search , .header-nav {
+  .header-nav-left , .header-search , .header-nav {
   	float: $float_left;
-  	height: $wrap_right_height;
+
+
   }
 
+}
+
+.wrap-content{
+	.page-content {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 
