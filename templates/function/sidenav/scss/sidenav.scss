@@ -1,17 +1,27 @@
 /* sidenav */
 
+/*
+  use this to replace $width for fix width position
+  aslo replace the transition to 0.
+*/
+$fixwidth: 200px;
+
+/*
+  properties for sidenavigation
+*/
 $height: 100%;
 $width: 0;
 $position: fixed;
 $index: 1;
 $top: 0;
 $left: 0;
+$right: 0;
 $background_color: #111;
 $overflow_x: hidden;
 $padding: 60px 0 0 0;
 $transition: 0.5s;
 
-/* Side nav Function */
+/* Side nav Function left */
 @mixin side-nav($height, $width, $position, $index,
 $top, $left, $background_color, $overflow_x, $padding ,$transition){
 
@@ -27,7 +37,26 @@ $top, $left, $background_color, $overflow_x, $padding ,$transition){
   transition: $transition; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.side-nav {
+/* Right side navigation */
+
+@mixin side-nav-right($height, $width, $position, $index,
+$top, $right, $background_color, $overflow_x, $padding ,$transition){
+
+  height: $height; /* 100% Full-height */
+  width: $width; /* 0 width - change this with JavaScript */
+  position: $position; /* Stay in place */
+  z-index: $index; /* Stay on top */
+  top: $top; /* Stay at the top */
+  right: $right; /* Stay at the left */
+  background-color: $background_color; /* Black*/
+  overflow-x: $overflow_x; /* Disable horizontal scroll */
+  padding-top: $padding;  /* Place content padding on top from the top */
+  transition: $transition; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* invoke */
+
+.sidenav {
   @include side-nav($height, $width, $position, $index,
   $top, $left, $background_color, $overflow_x, $padding ,$transition);
 }

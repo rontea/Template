@@ -1,6 +1,15 @@
 /* sidenav */
-/* Side nav Function */
-.side-nav {
+/*
+  use this to replace $width for fix width position
+  aslo replace the transition to 0.
+*/
+/*
+  properties for sidenavigation
+*/
+/* Side nav Function left */
+/* Right side navigation */
+/* invoke */
+.sidenav {
   height: 100%;
   /* 100% Full-height */
   width: 0;

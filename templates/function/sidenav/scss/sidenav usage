@@ -1,0 +1,16 @@
+
+
+
+Navigation Usage:
+
+<div class="wrap-left sidenav" id="mySidenav" >
+  <header >
+    <div class="header-logo">
+      <img alt="logo" class="sidenav-click-open" src="images/footerLogo.fw.png">
+    </div>
+  </header>
+</div>
+
+Close botton Usage
+
+<span style="" class="sidenav-click-open .push-content"> &#9776; </span>
