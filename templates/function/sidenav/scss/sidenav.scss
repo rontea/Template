@@ -33,7 +33,7 @@ $top, $left, $background_color, $overflow_x, $padding ,$transition){
   left: $left; /* Stay at the left */
   background-color: $background_color; /* Black*/
   overflow-x: $overflow_x; /* Disable horizontal scroll */
-  padding-top: $padding;  /* Place content padding on top from the top */
+  padding: $padding;  /* Place content padding on top from the top */
   transition: $transition; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -50,7 +50,7 @@ $top, $right, $background_color, $overflow_x, $padding ,$transition){
   right: $right; /* Stay at the left */
   background-color: $background_color; /* Black*/
   overflow-x: $overflow_x; /* Disable horizontal scroll */
-  padding-top: $padding;  /* Place content padding on top from the top */
+  padding: $padding;  /* Place content padding on top from the top */
   transition: $transition; /* 0.5 second transition effect to slide in the sidenav */
 }
 
