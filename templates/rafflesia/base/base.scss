@@ -1,74 +1,75 @@
 $float_left: left;
 
-html, body {
-	margin: 0 auto;
-	height: 100%;
-	padding: 0 auto;
-	width: 100%;
+body,
+html {
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 auto;
+  width: 100%;
 }
-
 $header_height: 100px;
 
 .wrap {
-	width:auto;
-	height:auto;
+  width: auto;
+  height: auto;
 
-    .wrap-right {
-      width: 100%;
-				header {
-					height: $header_height;
-				}
+  .wrap-right {
+    width: 100%;
+
+    header {
+      height: $header_height;
     }
+  }
 }
-
 
 .clearfix {
-    overflow: auto;
+  overflow: auto;
 }
 
-header , footer {
-	float: $float_left;
-	width: 100%;
+footer,
+header {
+  float: $float_left;
+  width: 100%;
 }
 /* wrap-left */
-.wrap-left{
-	header .header-logo {
-		width: 100%;
-		height: $header_height;
-	}
+
+.wrap-left {
+  header .header-logo {
+    width: 100%;
+    height: $header_height;
+  }
 }
 /* wrap-right */
-
 $wrap_right_height: 100%;
 
 .wrap-right header {
-	.header-nav-left {
-  	width: 5%;
+  .header-nav-left {
+    width: 5%;
   }
 
   .header-search {
- 	  width: 45%;
+    width: 45%;
   }
 
   .header-nav {
-  	width: 60%;
-	}
+    width: 60%;
+  }
 
-  .header-nav-left , .header-search , .header-nav {
-  	float: $float_left;
+  .header-nav,
+  .header-nav-left,
+  .header-search {
+    float: $float_left;
   }
 }
 
-.wrap-content{
-	.page-content {
-		width: 100%;
-		height: 100%;
-	}
+.wrap-content {
+  .page-content {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
 }
 
-
 footer {
-
   float: $float_left;
-
 }
