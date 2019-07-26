@@ -85,7 +85,7 @@ header {
 .wrap-right header .header-nav-left {
   width: 5%; }
 .wrap-right header .header-search {
-  width: 45%; }
+  width: 30%; }
 .wrap-right header .header-nav {
   width: 60%; }
 .wrap-right header .header-nav,
@@ -101,6 +101,6 @@ header {
 footer {
   float: left; }
 
-/*test*/
+/*other function*/
 
 /*# sourceMappingURL=styles.css.map */
