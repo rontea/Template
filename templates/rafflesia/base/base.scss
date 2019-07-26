@@ -47,19 +47,16 @@ $wrap_right_height: 100%;
   }
 
   .header-search {
- 	  width: 50%;
+ 	  width: 45%;
   }
 
   .header-nav {
-  	width: 45%;
-  }
+  	width: 60%;
+	}
 
   .header-nav-left , .header-search , .header-nav {
   	float: $float_left;
-
-
   }
-
 }
 
 .wrap-content{

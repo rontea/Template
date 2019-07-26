@@ -28,9 +28,9 @@ header, footer {
 .wrap-right header .header-nav-left {
   width: 5%; }
 .wrap-right header .header-search {
-  width: 50%; }
-.wrap-right header .header-nav {
   width: 45%; }
+.wrap-right header .header-nav {
+  width: 60%; }
 .wrap-right header .header-nav-left, .wrap-right header .header-search, .wrap-right header .header-nav {
   float: left; }
 
