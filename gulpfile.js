@@ -21,6 +21,13 @@ var paths = {
     }
 };
 
+var bootpath = {
+  styles: {
+    src: "node_modules/bootstrap/scss/bootstrap.scss/*.scss",
+
+    dest: "css/bootstrap"
+  }
+};
 
 // gulp test task hello
 gulp.task('hello', function() {
@@ -33,6 +40,13 @@ gulp.task('tosrc', function(){
     .pipe(sass()) // Using gulp-sass
     .pipe(gulp.dest(paths.styles.dest))
 });
+
+/*
+=====================
+Gulp Task - source :
+https://levelup.gitconnected.com/how-to-setup-your-workflow-using-gulp-v4-0-0-5450e3d7c512
+=====================
+*/
 
 function style() {
     return gulp
@@ -97,3 +111,36 @@ gulp.task('build', build);
  * Define default task that can be called by just running `gulp` from cli
  */
 gulp.task('default', build);
+
+/*
+Bootsrap to compile
+*/
+
+function bootstrapCompile() {
+  return gulp
+    .src(bootpath.styles.src)
+    .pipe(sass()) // Using gulp-sass
+    .pipe(gulp.dest(bootpath.styles.dest))
+};
+
+exports.bootstrapCompile = bootstrapCompile;
+
+gulp.task('tobootstrap',bootstrapCompile) ;
+
+
+/*
+Move JS
+*/
+
+function moveJS() {
+  return gulp
+    .src(['node_modules/bootstrap/dist/js/bootstrap.min.js',
+    'node_modules/popper.js/dist/popper.min.js','node_modules/tether/dist/js/tether.min.js',
+    'node_modules/jquery/dist/jquery.min.js'])
+    .pipe(gulp.dest("js/inc"))
+    .pipe(browserSync.stream())
+};
+
+exports.moveJS = moveJS;
+
+gulp.task('movejs',moveJS);
