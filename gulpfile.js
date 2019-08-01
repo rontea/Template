@@ -15,9 +15,9 @@ var gulp = require("gulp"),
 var paths = {
     styles: {
         // By using styles/**/*.sass we're telling gulp to check all folders for any sass file
-        src: "src/scss/*.scss",
+        src: "templates/rafflesia/*.scss",
         // Compiled files will end up in whichever folder it's found in (partials are not compiled)
-        dest: "src/css"
+        dest: "./css"
     }
 };
 
@@ -25,7 +25,7 @@ var bootpath = {
   styles: {
     src: "node_modules/bootstrap/scss/bootstrap.scss/*.scss",
 
-    dest: "css/bootstrap"
+    dest: "css/inc"
   }
 };
 
@@ -124,7 +124,7 @@ function bootstrapCompile() {
 };
 
 exports.bootstrapCompile = bootstrapCompile;
-
+// compile bootstrap
 gulp.task('tobootstrap',bootstrapCompile) ;
 
 
@@ -144,3 +144,8 @@ function moveJS() {
 exports.moveJS = moveJS;
 
 gulp.task('movejs',moveJS);
+
+
+/*
+Minify Source
+*/
